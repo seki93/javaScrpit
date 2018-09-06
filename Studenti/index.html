@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="StyleSheet" href="css/customTable.css" type="text/css"/>
+</head>
+
+<body>
+    <table>
+        <thead>
+        	<tr>
+    	    	<th class= "sort" data-name="firstName">Firstname</th>
+    	    	<th class= "sort" data-name="lastName">Lastname</th> 
+    	    	<th class= "sort" data-name="age">Age</th>
+                <th class= "sort" data-name="index">Index</th>
+                <th>Edit</th>
+                <th>Delete</th>
+    	  	</tr>
+        </thead>
+        <tbody id = "1">
+
+        </tbody>
+    </table>
+
+    <div>
+        <div>
+            <form id = "myForm">
+                <fieldset>
+                    <legend>Add student</legend>
+
+                    <input TYPE="text" id = "firstName" NAME="inputbox"  placeholder="First name"></br>
+                    <input TYPE="text" id = "lastName" NAME="inputbox"  placeholder="Last name"></br>
+                    <input TYPE="number" id = "age" NAME="inputbox"  placeholder="Age"></br>
+                    <input TYPE="text" id = "index" NAME="inputbox"  placeholder="Index"></br>
+                    <input TYPE="button" NAME="button" Value="add student to table" onClick= addStudnet();></br>
+                    <input TYPE="button" NAME="button" Value="rest form" onClick= resetForm();>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div>
+            <form id = "editForm">
+                <fieldset>
+                    <legend>Edit student</legend>
+                    <input TYPE="text" id = "editfirstName" NAME="inputbox"  placeholder="First name"></br>
+                    <input TYPE="text" id = "editlastName" NAME="inputbox"  placeholder="Last name"></br>
+                    <input TYPE="number" id = "editage" NAME="inputbox"  placeholder="Age"></br>
+                    <input TYPE="text" id = "editindex" NAME="inputbox"  placeholder="Index"></br>
+                    <input TYPE="button" NAME="button" Value="edit user" onClick= editFormSaveData()>
+                </fieldset>
+            </form>
+        </div>
+
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Studnets per page</legend> 
+                    Records per page: <input type="text" id = "recordsPerPage" value=1 ><br>
+                    <input type="button" value="change Records per page" onclick="changeNumberOfRecords()">
+                    <input type="button" value="all recors in one page" onclick="allRecordsInOnePage()">
+                </fieldset>
+            </form>
+        </div>
+
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Select search method</legend>
+            
+                    <div>
+                        <input type="radio" id = "searchFirstName" name="search" value="firstName"> First name<br>
+                        <input type="radio" id = "searchLastName" name="search" value="lastName"> Last name<br>
+                        <input type="radio" id = "searchAge" name="search" value="age"> Age<br>
+                        <input type="radio" id = "searchIndex" name="search" value="index"> Index<br>    
+                    </div>
+                    <div>
+                        <input type="text" id="searchInput" placeholder="Search ..."><br/>
+                        <input type="button" value="search" onClick= "searchTable()"><br>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="pagination"></div>
+    </div>
+
+    <!-- <button onclick="listOfAllStudents();"> list od All studnes</button> -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="StyleSheet" href="css/customTable.css" type="text/css"/>
+</head>
+
+<body>
+    <table>
+        <thead>
+        	<tr>
+                <th>Country</th>
+                <th>City</th>
+                <th>Temp</th>
+                <th>min</th>
+                <th>max</th>
+                <th>img</th>
+    	  	</tr>
+        </thead>
+        <tbody id = "1">
+
+        </tbody>
+    </table>
+
+    <div id="2"></div>
+
+    <form id="dataFromUser">
+        <input type="text" name="city" id="city"  placeholder="Enter city name..."><br>
+        <input type="text" name="country" id="country" placeholder="Enter country name..."><br>
+    </form>
+
+    <input type="radio" name="weather" id = "oneDay" value="weather"> One day
+    <input type="radio" name="weather" id="fiveDays" value="forecast"> Five days<br>
+    <button id="getWeather"> weather</button>
+    <button id="btnClear"> clear</button> 
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

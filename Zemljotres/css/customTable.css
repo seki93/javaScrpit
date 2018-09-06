@@ -1,0 +1,40 @@
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+div{
+	float: left;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+img {
+    border-collapse: collapse;
+}
+
+table {
+	width:100%;
+}
+
+th{
+	border: 1px solid black;
+    border-collapse: collapse;
+	background-color: #00FF00;
+}
+
+form {
+	margin: 15px;
+}
